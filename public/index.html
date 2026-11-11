@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Туман — вейп-шоп (демо)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="gate" id="gate">
+  <div class="gbox">
+    <div class="logo">Туман</div>
+    <h1 id="gt">Вам уже виповнилося 18?</h1>
+    <p id="gp">Ми продаємо продукцію з нікотином, тому вхід лише для повнолітніх.</p>
+    <div class="quick" id="gb">
+      <button class="btn" id="yes">Так, мені є 18</button>
+      <button class="btn ghost" id="no">Ні</button>
+    </div>
+  </div>
+</div>
+<div class="demo">Демо-версія: товари й ціни вигадані, замовлення не обробляються</div>
+<header><div class="wrap bar">
+  <div class="logo">Туман</div>
+  <nav><a href="#shop">Каталог</a><a href="#info">Доставка й оплата</a></nav>
+  <input class="search" id="q" type="search" placeholder="Знайти смак або пристрій" aria-label="Пошук">
+  <button class="cartbtn" id="open">Кошик<b id="cnt">0</b></button>
+</div></header>
+<main>
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Під-системи, рідини та витратники з доставкою по Україні</h1>
+    <p class="lead">Відправляємо Новою поштою, оплата при отриманні. Продаж лише повнолітнім, вік перевіряємо при замовленні.</p>
+    <div class="quick">
+      <button class="btn" data-go="Пристрої">Обрати пристрій</button>
+      <button class="btn ghost" data-go="Рідини">Дивитися рідини</button>
+    </div>
+  </div>
+  <div class="feat" id="feat"></div>
+</div></div>
+
+<section id="shop"><div class="wrap">
+  <div class="head"><h2>Каталог</h2><div class="chips" id="chips"></div></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="info"><div class="wrap">
+  <div class="head"><h2>Доставка й оплата</h2></div>
+  <div class="facts">
+    <div><h3>Нова пошта</h3><p>Відправляємо по всій Україні, зазвичай доставка займає 1–3 дні.</p></div>
+    <div><h3>Оплата при отриманні</h3><p>Передоплата не потрібна: платите у відділенні після огляду посилки.</p></div>
+    <div><h3>Безкоштовно від 1500 ₴</h3><p>Для менших замовлень вартість доставки за тарифами перевізника.</p></div>
+    <div><h3>Лише повнолітнім</h3><p>Підтвердження віку при вході та при оформленні замовлення.</p></div>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <p><strong>Містить нікотин. Викликає залежність. Лише для осіб віком від 18 років.</strong></p>
+  <p>«Туман» — вигаданий магазин, створений як демонстрація інтернет-вітрини. <a href="/admin">Вхід для власника</a></p>
+</div></footer>
+<div class="veil" id="veil"></div>
+<aside class="drawer" id="drawer" aria-label="Кошик">
+  <div class="dh"><h2 id="dt">Кошик</h2><button class="x" id="close" aria-label="Закрити">×</button></div>
+  <div class="db" id="db"></div>
+  <div class="df" id="df"></div>
+</aside>
+<script src="/app.js"></script>
+</body>
+</html>
